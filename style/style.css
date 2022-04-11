@@ -129,8 +129,8 @@ input[type="submit"]{
 }
 .perfil{
     width: 100%;
-    position: absolute;
     align-items: center;
+    position: absolute;
     top: 30%;
 }
 .perfil >img{
