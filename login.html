@@ -16,16 +16,28 @@
             <form>
                 <div class="input-login">
                     <span class="icon"><i class="fa fa-user"></i></span>
-                    <input type="text" placeholder="ID DO PROFESSOR">
+                    <input type="text" placeholder="ID DO PROFESSOR" id="idUser">
                 </div>
                 <div class="input-pass">
                     <span class="icon"><i class="fa fa-regular fa-key"></i></span>
-                    <input type="password" placeholder="SENHA DO PROFESSOR">
+                    <input type="password" placeholder="SENHA DO PROFESSOR" id="passUser">
                 </div>
                 <a href="#">Não sei meu ID ou Senha!</a>
-                <input type="submit" value="Entrar">
+                <input type="submit" value="Entrar" onclick="validar()">
             </form>
         </div>
     </div>
+    <script>
+        var uss = document.getElementById(idUser)
+        let user = document.querySelector('#idUser')
+        let pass = document.querySelector('#passUser')
+        function validar(){
+            console.log(uss.value)
+            if(console.log(user.value) =='victor'){
+                console.log('ok')
+            }
+        }
+
+    </script>
 </body>
 </html>
