@@ -110,4 +110,62 @@ input[type="submit"]{
     left: 10px;
     position: absolute;
 }
-
+.body-perfil{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 77% 8%;
+    grid-template-areas: "headerP"
+                        "mainP"
+                        "footerP"
+}
+.header-perfil{
+    background-image: url('../images/depositphotos_42196053-stock-photo-video-camera-lens.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.perfil{
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    top: 30%;
+}
+.perfil >img{
+    border-radius: 50%;
+}
+.main-perfil > h1{
+    color: black;
+    grid-area: headerP;
+    margin-top: 40px;
+}
+.main-perfil > h2{
+    margin-top: 10px;
+    color: #fc295c;
+    grid-area: mainP;
+}
+.main-perfil > p{
+    font-size: 1.3rem;
+}
+.selecao{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+.selecao > a{
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2.5px 5px 15px rgba(0, 0, 0, 0.507);
+}
+.footer-perfil{
+    grid-area: footerP;
+    background-color: #fc295c;
+    color: white;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
